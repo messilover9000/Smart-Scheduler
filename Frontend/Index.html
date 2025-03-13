@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Smart Appointment Scheduler</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="container">
+         <h1>Book an Appointment</h1>
+         <form id="appointmentForm">
+             <input type="text" id="patientName" placeholder="Enter Your Name" required>
+             <input type="number" id="mobileNumber" placeholder="Enter Mobile Number" required>
+             <input type="email" id="emailId" placeholder="Enter Email ID" required>
+             <input type="number" id="age" placeholder="Enter Age" required>
+             
+             <select id="sex" required>
+                 <option value="">Select Sex</option>
+                 <option value="Male">Male</option>
+                 <option value="Female">Female</option>
+                 <option value="Other">Other</option>
+             </select>
+             
+             <input type="datetime-local" id="appointmentDate" required>
+             <button type="submit">Book Appointment</button>
+         </form>
+ 
+         <!-- Upcoming Appointments Section -->
+         <div id="upcomingSection">
+             <h2>Upcoming Appointments</h2>
+             <ul id="appointmentList"></ul>
+         </div>
+     </div>
+ 
+     <script src="script.js"></script>
+ </body>
+ </html>
